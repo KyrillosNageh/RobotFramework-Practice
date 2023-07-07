@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 Library    JSONLibrary
 Resource    ../Utilities/BrowserFactory.robot
+Resource    ../../Utilities/BrowserFactory.robot
 Resource    ../../Utilities/JsonTestDataReader.robot
 Resource    ../../Keywords/Pages/HomePage.robot
 Resource    ../../Keywords/Pages/RegisterPage.robot
@@ -25,6 +26,6 @@ Verify registration with valid data
 *** Keywords ***
 Setup
     Load Test Data JSON File    registeration.json
-    #Initialize New Browser
+    Initialize New Browser
     #Navigate To Google Home Page
     
